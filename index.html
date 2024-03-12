@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      .heading {
+        text-align: center;
+      }
+      .product_transfer_tags {
+        max-width: 500px;
+        margin: 40px auto;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgb(77, 77, 77);
+        padding: 24px 16px;
+        border-radius: 20px;
+      }
+      .product_transfer_tags input {
+        margin-top: 6px;
+        width: 100%;
+        border: 1px solid black;
+      }
+      .product_transfer_tags input,
+      select {
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 4px;
+        width: 100%;
+        border: 1px solid black;
+      }
+      .product_transfer_tags label {
+        display: block;
+        margin-top: 16px;
+        color: rgb(39, 38, 38);
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .product_transfer_tags label:first-child{
+        margin-top: 0;
+      }
+
+      /* Second form */
+      .sold_tags {
+        max-width: 500px;
+        margin: 40px auto;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgb(77, 77, 77);
+        padding: 24px 16px;
+        border-radius: 20px;
+      }
+      .sold_tags input {
+        margin-top: 6px;
+        width: 100%;
+        border: 1px solid black;
+      }
+      .sold_tags input,
+      select {
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 4px;
+        width: 100%;
+        border: 1px solid black;
+      }
+      .sold_tags label {
+        display: block;
+        margin-top: 16px;
+        color: rgb(39, 38, 38);
+      }
+      .sold_tags label:first-child{
+        margin-top: 0;
+      }
+      @media (min-width: 767.98px) {
+        .product_transfer_tags {
+          padding: 32px 24px;
+        }
+        .sold_tags {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">Product Transfer Tag</h2>
+    <form action="" class="product_transfer_tags">
+      <label for="">Transfer Number</label>
+      <input type="number" />
+      <label for=""> From which warehouse</label>
+      <select name="" id="">
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+        <option value="option 4">Option 4</option>
+        <option value="option 5">Option 5</option>
+      </select>
+      <label for="">To which warehouse</label>
+      <select name="" id="">
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+        <option value="option 4">Option 4</option>
+        <option value="option 5">Option 5</option>
+      </select>
+      <label for="">Invoice</label>
+      <input type="number" />
+      <label for="">Date</label>
+      <input type="date" />
+      <label for="">Labelling Person </label>
+      <input type="text" />
+      <label for="">Customer pick Up </label>
+      <input type="text" />
+    </form>
+    <h2 class="heading">Sold Tag</h2>
+    <form action="" class="sold_tags">
+      <label for="">Invoice </label>
+      <input type="number" />
+      <label for="">Sales Name </label>
+      <input type="text" />
+      <label for=""> Store Location</label>
+      <select name="" id="">
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+        <option value="option 4">Option 4</option>
+        <option value="option 5">Option 5</option>
+      </select>
+      <label for=""> Name </label>
+      <input type="text" />
+      <label for=""> Phone </label>
+      <input type="number" />
+
+      <label for="">Person name </label>
+      <input type="text" />
+      <label for="">Estimated delivery </label>
+      <input type="date" />
+    </form>
+  </body>
+</html>
